@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	Sorter "interfaces.com/m/v2/utils.com/IntStrSorter"
+	Cat "interfaces.com/m/v2/utils.com/Cat"
 )
 
 type I interface {
@@ -48,14 +48,16 @@ func main() {
 	// f(s)
 	// f(r)
 
-	intarr := Sorter.Xi([]int{5, 2, 3, 1})
-	strarr := Sorter.Xs([]string{"f", "a", "b", "c"})
+	// intarr := Sorter.Xi([]int{5, 2, 3, 1})
+	// strarr := Sorter.Xs([]string{"f", "a", "b", "c"})
 
 	//GENERIC SORTING FUNCTION USING INTERFACES
-	Sorter.Sort(intarr)
-	Sorter.Sort(strarr)
-	fmt.Println(intarr)
-	fmt.Println(strarr)
+	// Sorter.Sort(intarr)
+	// Sorter.Sort(strarr)
+	// fmt.Println(intarr)
+	// fmt.Println(strarr)
+
+	// fmt.Println(Max.Max(intarr))
 
 	// GENERIC SORTING FUNCTION USING REFLECTION
 	// Bubblesort.Sort(intarr)
@@ -63,4 +65,17 @@ func main() {
 	// Bubblesort.Sort(strarr)
 	// fmt.Println(strarr)
 
+	// GENERIC LIST
+	// llist := LinkedList.NewList()
+	// llist.AddNode(1)
+	// llist.AddNode(2)
+	// llist.AddNode(3)
+	// llist.AddNode(4)
+
+	// llist.Print()
+
+	//CAT Program
+	Cat.Cat()
+
+	fmt.Println("End of Program")
 }
